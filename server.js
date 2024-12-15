@@ -56,7 +56,8 @@ app.use(express.json());
 
 mongoose
   .connect(
-    "mongodb+srv://tnxm12112003:tnxm12112003@clustertm.tepsv.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTM"
+    // "mongodb+srv://tnxm12112003:tnxm12112003@clustertm.tepsv.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTM"
+    "mongodb+srv://tnxm12112003:Yeutuan1*@tmshopcluster.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
   )
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
