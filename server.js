@@ -61,10 +61,10 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
 
-app.use(express.static("./client/dist"));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
-});
+// app.use(express.static("./client/dist"));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
+// });
 
 app.use("/api/auth", authRouter);
 app.use("/api/admin/products", adminProductsRouter);
