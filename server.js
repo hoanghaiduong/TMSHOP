@@ -2,6 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const path = require("path");
+require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
@@ -34,6 +35,8 @@ app.use(cookieParser());
 app.use(express.json());
 // app.use(express.static(path.join(__dirname, "public")));
 app.use("/", (req, res) => {
+  console.log(PORT);
+
   return res.status(200).json({
     message: "Hello World",
   });
