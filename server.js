@@ -27,7 +27,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   "http://localhost:5173",
   "https://tmshop-client.vercel.app",
-  "https://shoptm.azurewebsites.net"
+  "https://icy-sky-085e2d70f.4.azurestaticapps.net"
 ];
 app.use(
   cors({
